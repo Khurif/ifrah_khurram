@@ -1,0 +1,41 @@
+.container-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.col {
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid gray;
+    
+}
+
+
+body {
+    background-color: #DDDDDD;
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: #FFDDCC;
+    }
+    .container-flex{
+        flex-direction: column;
+    }
+    .col {
+        width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    body {
+      background-color: #DDCCFF;
+    }
+    .container-flex{
+        flex-direction: column;
+    }
+    .col {
+        width: 33.33%;
+    }
+  }
